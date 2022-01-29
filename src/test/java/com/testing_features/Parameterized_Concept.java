@@ -1,0 +1,20 @@
+package com.testing_features;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class Parameterized_Concept {
+	
+	
+	@Test 
+	@Parameters({"UserId", "Password"})
+	public void facbook_Login(String UserId, String Password ) {
+		
+		
+		System.out.println("userId is:"+UserId);
+		System.out.println("password is :"+Password);
+
+
+	}
+
+}
